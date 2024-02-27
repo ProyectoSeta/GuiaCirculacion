@@ -19,7 +19,7 @@
 
 #body_sesion_resgister{
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url('img-session-5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
