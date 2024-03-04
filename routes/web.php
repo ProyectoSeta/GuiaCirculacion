@@ -20,7 +20,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/solicitud', [App\Http\Controllers\SolicitudController::class, 'index'])->name('solicitud');
 // Route::view('/solicitud','solicitud.index');
+
+/*Usuario sujeto pasivo*/
+
+Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
+Route::post('/user', [App\Http\Controllers\UserController::class, 'store'])->name('user.store');
+//Route::get('/user/{slug?}/roles', [App\Http\Controllers\UserController::class, 'roles'])->name('user.roles');
+//Route::get('/user/{slug?}/edit', [App\Http\Controllers\UserController::class, 'edit'])->name('user.edit');
+//Route::put('/user/{slug?}/updat', [App\Http\Controllers\UserController::class, 'updat'])->name('user.updat');
+//Route::put('/user/{slug?}', [App\Http\Controllers\UserController::class, 'update'])->name('user.update');
+
+
 
 Route::get('/solicitud', function () { 
     return view('solicitud');
