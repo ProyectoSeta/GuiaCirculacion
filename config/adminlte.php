@@ -320,7 +320,7 @@ return [
         ['header' => 'Solicitudes'],
         [
             'text' => 'Solicitud de guías',
-            'url'  => '/solicitud',
+            'route'  => 'solicitud',
             // 'icon' => 'fas fa-file-circle-plus', 
         ],
         ['header' => 'Libro de Control'],
